@@ -1,51 +1,72 @@
-# Ignore list for Eagle, a PCB layout tool
+# Ignore list for Cadence OrCAD 16.6
 
-# Backup files
-*.s#?
-*.b#?
-*.l#?
-*.b$?
-*.s$?
-*.l$?
 
-# Eagle project file
-# It contains a serial number and references to the file structure
-# on your computer.
-# comment the following line if you want to have your project file included.
-eagle.epf
+#############
+## Allegro
+#############
 
-# Autorouter files
-*.pro
-*.job
+# Ignore log file
+*.log
+*.log,1
+*.log,2
+*.log,3
 
-# CAM files
-*.$$$
-*.cmp
-*.ly2
-*.l15
-*.sol
-*.plc
-*.stc
-*.sts
-*.crc
-*.crs
+*.dml
+*.lst
 
-*.dri
-*.drl
-*.gpi
-*.pls
-*.ger
-*.xln
+#ignore 记录操作allegro的事件
+*.jrl
+*.jrl,1
 
-*.drd
-*.drd.*
+*.tag
 
-*.s#*
-*.b#*
+#报告文件
+*.rpt
 
-*.info
+#brd,1
 
-*.eps
+*.brd,1
 
-# file locks introduced since 7.x
 *.lck
+
+#报表文件
+*.txt
+*.txt,1
+*.txt,2
+
+#XY数据除外
+!place_txt.txt
+
+#DXF导入文件
+*.cnv
+
+#Gerber param file除外
+!art_param.txt
+
+#Folder
+#过滤整个文件夹
+/signoise.run/ 
+
+#############
+## OrCAD
+#############
+*.dbk
+*.opj
+*.DRC
+*.DSNlck
+
+#properites file
+*.EXP
+
+
+#ignore netlist
+allegro/ 
+
+#############
+##DXF
+#############
+# ignore dxf file
+*.dxf
+*.cnv
+*.cnv,1
+
