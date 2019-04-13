@@ -1,0 +1,5 @@
+## PCB Design flow
+1. import netlist
+2. component placement
+3. rout
+4. drc
